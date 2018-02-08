@@ -1,0 +1,70 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app/schema",
+      "id":"0Ho1N0000008OJSSA2",
+      "versionName": "v 1.0",
+      "versionDescription": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "ancestorId": ""
+    },
+    {
+      "path": "force-app/bl",
+      "id":"0Ho1N0000008OJXSA2",
+      "versionName": "v 1.0",
+      "versionDescription": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "ancestorId": "",
+      "dependencies": [
+        {
+        "packageId": "0Ho1N0000008OJSSA2",
+        "versionNumber": "1.0.0.LATEST"
+        }
+        ]
+    },
+    {
+      "path": "force-app/ui",
+      "id":"0Ho1N0000008OJcSAM",
+      "versionName": "v 1.0",
+      "versionDescription": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "ancestorId": "",
+      "dependencies": [
+        {
+        "packageId": "0Ho1N0000008OJSSA2",
+        "versionNumber": "1.0.0.LATEST"
+        },
+        {
+        "packageId": "0Ho1N0000008OJXSA2",
+        "versionNumber": "1.0.0.LATEST"
+        }
+        ]
+    },
+    {
+      "path": "force-app/perms",
+      "id":"0Ho1N0000008OJhSAM",
+      "default": true,
+      "versionName": "v 1.0",
+      "versionDescription": "ver 1.0",
+      "versionNumber": "1.0.0.NEXT",
+      "ancestorId": "",
+      "dependencies": [
+        {
+        "packageId": "0Ho1N0000008OJSSA2",
+        "versionNumber": "1.0.0.LATEST"
+        },
+        {
+        "packageId": "0Ho1N0000008OJXSA2",
+        "versionNumber": "1.0.0.LATEST"
+        },
+        {
+        "packageId": "0Ho1N0000008OJcSAM",
+        "versionNumber": "1.0.0.LATEST"
+        }
+        ]
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "42.0"
+}
